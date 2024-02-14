@@ -185,7 +185,6 @@ dd {
 
 footer{
     background-color: #ffffff;
-    margin-top: 80px;
 }
 
 .footer_inner{
@@ -200,6 +199,11 @@ footer{
     width: 226px;
 }
 
+.shop_detail{
+    margin-left: 64px;
+}
+
 .copy_right{
-    align-items: center;
+    text-align: center;
+    margin-bottom: 75px;
 }

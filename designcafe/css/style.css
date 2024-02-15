@@ -4,6 +4,8 @@ body{
     background-color: #e8d9bf;
  }
 
+/*header*/
+
 .header_inner{
     display: flex;
     justify-content: space-between ;
@@ -30,18 +32,32 @@ h1{
     width: 227px;
 }
 
-.container{
-    max-width: 1000px;
-    background-color: #e8d9bf;
+/*全体*/
 
+.container{
+    background-color: #e8d9bf;
+    margin: 0 auto;
 }
 
+.about_us,
 .mission,
 .menu,
 .event{
     max-width: 1000px;
-    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
 }
+
+h2{
+    text-align: center;
+}
+
+h2 img{
+    height: 78px;
+    width:auto;
+}
+
+/*mission*/
 
 .mission{
     padding-top: 100px;
@@ -58,6 +74,7 @@ h1{
     margin-top: 73px;
     margin: 0 auto;
     margin-bottom: 45px;
+    line-height: 1.17;
 }
 
 .bottom{
@@ -67,46 +84,50 @@ h1{
     margin-bottom: 86px;
 }
 
+/*about us*/
+
 .about_us{
     display: flex;
     justify-content:center;
+    align-items: center;
     margin-bottom: 100px;
 }
 
-.inner_photo img{
-    width:850px;
-    height:566px;
-    border-bottom-right-radius: 10px;
+.inner_photo{
+    width:50%;
 }
 
-.motto img{
-    width:272px;
-    margin-top: 67px;
+.inner_photo img{
+    border-bottom-right-radius: 80px;
+}
+
+.about_us_text h2{
+    text-align: left;
     margin-bottom: 42px;
 }
-.motto{
-    margin-left: 82px;
+
+.about_us_text{
+    width: 50%; 
+    padding-left: 82px;
 }
 
-.about_us h2{
-    font-size: 44pt;
+.about_us_text .head_copy{
+    font-size: 44px;
     font-weight: normal;
     margin-bottom: 31px;
-}
-.motto p{
-    width: 410px;
-    font-size: 16px;
+    line-height: 1.38;
 }
 
-h2{
-    text-align: center;
+.about_us_text p{
+    font-size: 16px;
+    line-height: 1.62;
 }
+
+/* menu */
 
 .menu img{
-    width: 151px;
     margin-bottom: 50px;
 }
-
 
 .menu_item ul{
     display: flex;
@@ -115,8 +136,12 @@ h2{
     margin-bottom: 100px;
 }
 
+.menu_item li{
+    width: 32.8%;
+}
+
 .menu_item img{
-    width: 328px;
+    border-top-right-radius: 48px;
 }
 
 .menu_item h3{
@@ -128,60 +153,79 @@ h2{
 }
 
 .menu_item p{
-    width: 300px;
+    line-height: 1.47;
 }
 
-.gallery h2{
-    text-align: center;
-}
+/* gallery */
 
 .gallery h2 img{
-    width: 245px;
     margin-bottom: 50px;
 }
 
 .scroll{
     display: flex;
-    width:384px;
     margin-bottom: 70px;
 }
 
+.scroll img{
+     width: 20%;
+}
+
+/* event */
+
+.event{
+    margin-bottom: 40px;
+}
 .event h2 img{
-    width: 174px;
     text-align: center;
     margin-bottom: 44px;
 }
 
-
-dl {
+.event-content{
     max-width: 1000px;
     width: 100%;
     background-color: #ffffff;
     border: solid #4f260b;
+}
+
+dl {
+    max-width: 700px;
     display: flex;
     flex-wrap: wrap;
-    margin:0 auto;
-    /* justify-content: center; */
-    margin-bottom: 78px;
+    margin:40px auto;
+    font-size: 23px;
   }
 
 dt {
-    width: 30%;
+    width: 20%;
     padding-bottom: 20px;
     margin-bottom: 10px;
   }
   
 dd {
-    width: 70%;
+    width: 80%;
     padding-bottom: 20px;
     margin-bottom: 10px;
   }
-  
+
+dt:last-of-type,
+dd:last-of-type{
+    margin: 0;
+    padding: 0;
+}
+
+/* access */
+
 .access h2 img{
-    width: 213px;
-    text-align: center;
     margin-bottom: 48px;
 }
+
+iframe{
+    width: 100%;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+/* footer */
 
 footer{
     background-color: #ffffff;
@@ -189,10 +233,10 @@ footer{
 
 .footer_inner{
     display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 75px;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 75px;
+    padding-left: 24%;
 }
 
 .footer_inner img{
@@ -200,10 +244,18 @@ footer{
 }
 
 .shop_detail{
-    margin-left: 64px;
+    padding-left: 64px;
+    line-height: 1.95;
 }
 
 .copy_right{
     text-align: center;
-    margin-bottom: 75px;
+    padding-bottom: 75px;
+}
+
+.top_button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width:125px;
 }
